@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/css/main.css">
+    <link rel="stylesheet" href="css/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -17,10 +23,11 @@
             <li>단체및 기업구매</li>
             <li>고객서비스</li>
           </ul>
-          <h1 class="logo"><img src="image/커피콩.PNG" alt="커피콩">
+          <a class="logo"><img src="image/커피콩.PNG" alt="커피콩" /></a>
         </div>
-        
-        <div class="nav"><img src="image/커피 로고 .PNG" alt="커피빈 로고">
+
+        <div class="nav">
+          <img src="image/커피 로고 .PNG" alt="커피빈 로고" />
           <ul>
             <li>BUY ONLINE</li>
             <li>MEMBER'S CLUB</li>
@@ -30,61 +37,93 @@
           </ul>
         </div>
       </div>
-      <div class="slider">
-        <img src="image/용그림.PNG" alt="용그림">
+
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./image/용그림.PNG" alt="용그림" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./image/커피빈 텀블러.PNG" alt="텀블러" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./image/커피사진.PNG" />
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+
       <h1>MD ‘s Pick</h1>
       <ul class="contents">
-
-        <li >
-          <img src="image/커피1.PNG" alt="오트라떼">
-          <p>vanilla Bean Oat Latte
-            바닐라빈 오트 라떼<br>
-            프리미엄 바닐라빈 소스와 크리미하고 <br>
-            진한 오트음료</p>
+        <li>
+          <img src="image/커피1.PNG" alt="오트라떼" />
+          <p>
+            vanilla Bean Oat Latte 바닐라빈 오트 라떼<br />
+            프리미엄 바닐라빈 소스와 크리미하고 <br />
+            진한 오트음료
+          </p>
         </li>
-        <li >
-          <img src="image/커피2.PNG" alt="오트라떼">
-          <p>Cafe Latte
-            카페 라떼<br>
-            에스프레소와 스팀밀크 그리고 거품</p>
-          </li>
-        <li >
-          <img src="image/커피4.PNG" alt="오트라떼">
-          <p>Sparkling Goheung Yuzu Lemon Chamomile Tea<br>
-            스파클링 고흥유자 레몬 캐모마일<br>
-            따뜻한 햇살과 남해의 해풍으로 자란 고흥 유자와 향긋한 레몬 캐모마일 티
-          </li>
+        <li>
+          <img src="image/커피2.PNG" alt="오트라떼" />
+          <p>
+            Cafe Latte 카페 라떼<br />
+            에스프레소와 스팀밀크 그리고 거품
+          </p>
+        </li>
+        <li>
+          <img src="image/커피4.PNG" alt="오트라떼" />
+          <p>
+            Sparkling Goheung Yuzu Lemon Chamomile Tea<br />
+            스파클링 고흥유자 레몬 캐모마일<br />
+            따뜻한 햇살과 남해의 해풍으로 자란 고흥 유자와 향긋한 레몬 캐모마일
+            티
+          </p>
+        </li>
       </ul>
       <h1>What's new</h1>
       <ul class="contents2">
-
-        <li >
-          <img src="image/커피5.PNG" alt="오트라떼">
+        <li>
+          <img src="image/커피5.PNG" alt="오트라떼" />
           <p>2024년 Holiday MD</p>
         </li>
-        <li >
-          <img src="image/커피6.PNG" alt="오트라떼">
-          <p>vanilla Bean Oat Latte
-            모짜렐라 샌드위치 2종 
-          </li>
-        <li >
-          <img src="image/커피7.PNG" alt="오트라떼">
-          <p>vanilla Bean Oat Latte
-            Tiramisu Roll-Cake</p>
-          </li>
-       
-     
-       
+        <li>
+          <img src="image/커피6.PNG" alt="오트라떼" />
+          <p>vanilla Bean Oat Latte 모짜렐라 샌드위치 2종</p>
+        </li>
+
+        <li>
+          <img src="image/커피7.PNG" alt="오트라떼" />
+          <p>vanilla Bean Oat Latte Tiramisu Roll-Cake</p>
+        </li>
       </ul>
       <footer class="footer">
         <div class="footer1">
-          <span>(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029 ㅣ 통신판매업신고 제 2010-서울강남-00560<br>
-            서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 - 18:00) ㅣE-mail : cbk@coffeebeankorea.com<br>
-            ⓒ 2021. The Coffee Bean. All rights reserved. </span>
+          <span
+            >(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029 ㅣ
+            통신판매업신고 제 2010-서울강남-00560<br />
+            서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 -
+            18:00) ㅣE-mail : cbk@coffeebeankorea.com<br />
+            ⓒ 2021. The Coffee Bean. All rights reserved.
+          </span>
         </div>
         <div class="footer2"></div>
-    </footer>
+      </footer>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".slider", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     </div>
   </body>
 </html>
