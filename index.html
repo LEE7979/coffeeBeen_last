@@ -3,7 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="image/커피빈로고.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" /> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" /> -->
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- SEO 적용 -->
+    <meta
+      name="description"
+      content="The Coffee Bean & Tea Leaf 커피빈코리아"
+    />
+    <meta
+      name="keywords"
+      content="Coffeebeankorea,The Coffee Bean & Tea Leaf 커피빈코리아"
+    />
+    />
+    <meta property="og:title" content="커피빈" />
+    <meta property="og:description" content="The Coffee Bean & Tea Leaf
+    커피빈코리아"/" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://www.interpark.com" />
+    <meta property="og:site_name" content="커피빈" />
+    <meta property="og:type" content="website" />
+    <!-- css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 웹브라우저 간의 스타일 일관성을 유지하고 초기 스타일을 표준화하기 위해 css리셋 스타일 시트입니다. -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- js -->
+    <script src="js/html5shiv.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <!-- <script src="js/respond.min.js"></script> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>커피빈</title>
     <link rel="stylesheet" href="css/css/main.css" />
     <link
       rel="stylesheet"
@@ -16,24 +68,49 @@
     <div id="wrap">
       <div id="header">
         <div class="header-top">
-          <ul>
-            <li>로그인</li>
-            <li>매장찾기</li>
-            <li>채용정보</li>
-            <li>단체및 기업구매</li>
-            <li>고객서비스</li>
+            <li><a href="#">로그인</a>/li>
+            <li><a href="#">매장찾기</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">단체및 기업구매</a></li>
+            <li><a href="#">고객서비스</a></li>
           </ul>
           <a class="logo"><img src="image/커피콩.PNG" alt="커피콩" /></a>
         </div>
 
         <div class="nav">
           <img src="image/커피 로고 .PNG" alt="커피빈 로고" />
-          <ul>
-            <li>BUY ONLINE</li>
-            <li>MEMBER'S CLUB</li>
-            <li>MENU</li>
-            <li>STORE&서비스</li>
-            <li>THE COFFEE BEAN</li>
+          <ul class="mypage">
+            <a href="# ">BUY ONLINE</a>
+            <ul class="mypage1">
+              <li><a href="#">View ALL</a></li>
+              <li><a href="#">SALE</a></li>
+              <li><a href="#">NEW!!</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+            <ul class="mypage1">
+              <li><a href="#">멤버스 클럽</a></li>
+              <li><a href="#">나의 커피빈</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+            <ul class="mypage1">
+              <li><a href="#">View ALL</a></li>
+              <li><a href="#">SALE</a></li>
+              <li><a href="#">NEW!!</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+            <ul class="mypage1">
+              <li><a href="#">케이터링 서비스</a></li>
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+            <ul class="mypage1">
+              <li><a href="#">커피빈 코리아</a></li>
+              <li><a href="#">커피빈 소식</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -49,7 +126,6 @@
           <div class="swiper-slide">
             <img src="./image/커피사진.PNG" />
           </div>
-
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -100,15 +176,22 @@
         </li>
       </ul>
       <footer class="footer">
-        <div class="footer1">
-          <span
-            >(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029 ㅣ
-            통신판매업신고 제 2010-서울강남-00560<br />
-            서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 -
+        <ul class="footer1">
+          <li>
+          <address>
+            (주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029 ㅣ
+            통신판매업신고 제 2010-서울강남-00560</address>
+            <li>
+            <address>
+           서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 -
             18:00) ㅣE-mail : cbk@coffeebeankorea.com<br />
-            ⓒ 2021. The Coffee Bean. All rights reserved.
-          </span>
-        </div>
+            
+            <li>
+          
+                Copyright &copy; 2021. The Coffee Bean. All rights reserved. </li>
+          
+        </li>
+        </ul>
         <div class="footer2"></div>
       </footer>
       <!-- Initialize Swiper -->
