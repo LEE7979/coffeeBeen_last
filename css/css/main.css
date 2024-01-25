@@ -9,7 +9,8 @@ ul {
   list-style: none;
 }
 a {
-  text-align: none;
+  text-decoration: none;
+  color: #111;
 }
 img {
   vertical-align: middle;
@@ -23,23 +24,17 @@ body {
   font-size: 1.4rem;
 }
 #header {
-  width: 100%;
-  height: 195px;
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  top: 0;
-  z-index: 999999;
+  /* width: 100%; */
+  height: 50px;
+  /* background-color: rgb(133, 67, 67); */
+  display: flex;
 }
 .header-top {
-  /* background-color: antiquewhite; */
   display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  top: 35px;
-  display: none;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+  /* background-color: aqua; */
 }
 .header-top ul {
   display: flex;
@@ -47,86 +42,144 @@ body {
   gap: 40px;
   height: 50px;
 }
-.header:hover {
-  height: calc(250px+80px);
-}
-.header::before {
-  width: 100%;
-  height: 80px;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  border-bottom: 1px solid #d8d8d8;
-}
-
-.logo img {
-  margin-top: 7px;
-  margin-right: 70px;
-  background-color: blueviolet;
+.header-bt{
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-between;
 }
 .nav {
-  /* display: flex; */
-  justify-content: space-around;
-  gap: 50px;
+  
 }
-.nav ul {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  cursor: pointer;
+.header-bt img {
+  width: 50px;
+  /* height: 100%; */
 }
 .mypage1 {
   display: flex;
+  /* justify-content: space-between; */
+  /* width: 60%; */
+  /* line-height: center */
 }
-.slider {
-  margin-top: 195px;
-  width: 100%;
-  height: 700px;
-  overflow: hidden;
-  position: relative;
-  background-position: center 10%;
+.mypage1 li {
+  line-height: center;
 }
-h1 {
+
+.mypage1 > li > a {
+  display: block;
+  height: 50px;
+  padding: 10px 20px;
+  /* background-color: antiquewhite; */
+}
+.depth2 {
+  display: none;
   text-align: center;
-  color: #e5181e;
-  font-weight: bold;
-  margin-top: 30px;
+  /* width: 100%; */
+  /* height: 150px; */
+  /* background-color: #af4444; */
 }
-.slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+.depth2 li a {
+  display: block;
+  padding: 10px 20px;
 }
-p {
-  font-size: 16px;
-  text-align: left;
-  font-weight: bold;
-  color: #2e1b05b7;
+/* .nav:hover .depth2 {
+  display: block;
+} */
+
+
+nav ul li {
+  display: inline-block;
 }
-.contents {
-  /* width: 80%; */
+
+
+.search {
+  position: relative;
+  width: 300px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 5px 12px;
   display: flex;
-  justify-content: space-around;
-  padding: 50px 30px;
-  font-size: 16;
+  align-items: center;
 }
-.contents2 {
-  /* width: 80%; */
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 30px;
+
+.search input {
+  width: 90%;
+  border: 0;
+  font-size: 14px;
+  margin-right: 5px;
+  padding: 3px 0;
+  outline: none;
 }
-.footer {
-  background-color: rgb(192, 189, 189);
-  padding: 50px;
-  line-height: 30px;
-}
-.ft-icon {
-  width: 50%;
-  margin: 0 auto;
-}
+.search img {
+    width: 20px;
+    height: 20px;
+   
+  }
+  .slider {
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    background-position: center 10%;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    color: #e5181e;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  p:hover{
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    color: #2e1b05b7;
+   
+  }
+  .contents {
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+    font-size: 16;
+    cursor: pointer;
+  }
+  img{
+    border-radius: 3%
+  }
+    .contents2 {
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+    cursor: pointer;
+  }
+  .footer {
+    background-color: rgb(192, 189, 189);
+    padding: 50px;
+    line-height: 30px;
+  }
+  .ft-icon {
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width:1200px){
+    inner{
+      max-width: 1200px;
+    }
+  }
+  @media only screen and (max-width:980px){
+   .contents{
+    display: none;
+   }
+  }
